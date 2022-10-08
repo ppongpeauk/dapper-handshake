@@ -1,7 +1,7 @@
 import tensorflow as tf
 import cv2
 import numpy as np
-#print(tf.__version__)
+print(f"TensorFlow version: {tf.__version__}")
 
 # camera preview
 
@@ -41,7 +41,7 @@ while rval:
 
     # exit app on ESC
     key = cv2.waitKey(20)
-    if key == 27: # exit on ESC
+    if key == 27:
         break
 
 vc.release()
